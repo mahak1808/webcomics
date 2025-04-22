@@ -252,6 +252,9 @@ h2 {
 }
 
 /* WEEKLY UPDATES */
+.weekly-updates {
+    width: 100vw;
+}
 
 .responsive-grid {
     display: grid;
