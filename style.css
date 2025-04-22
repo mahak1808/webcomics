@@ -22,6 +22,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
+    width: 100vw;
 }
 
 .logo a{
@@ -150,6 +151,7 @@ h1 {
 .trending-now {
     padding-bottom: 20px;
     padding-inline: 20px;
+    width: 100vw;
 }
 
 h2 {
@@ -210,6 +212,7 @@ h2 {
 .genres {
     padding: 20px;
     padding-inline: 20px;
+    width: 100vw;
 }
 
 .genre-list {
