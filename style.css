@@ -21,6 +21,7 @@ header {
     justify-content: space-between;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .logo a{
@@ -50,12 +51,20 @@ header {
     @media (width < 1080px){
         font-size: 1rem;
     }
+
+    @media (width <680px){
+        font-size: 0.8rem;
+    }
 }
 
 .navigation ul{
     list-style: none;
     display: flex;
     gap: 20px;
+
+    @media (width <680px){
+        gap: 8px;
+    }
 }
 
 .navigation input {
@@ -71,9 +80,9 @@ header {
     border-width: 3px;
 
     @media (width < 1080px){
-        font-size: 1rem;
+        font-size: 0.8rem;
         height: 1rem;
-        width: 5rem;
+        width: 4rem;
         padding: 10px;
     }
 }
@@ -87,14 +96,16 @@ header {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23FBFBFB' d='M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0s.41-1.08 0-1.49zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14'/%3E%3C/svg%3E");
 
     @media (width < 1080px){
-        height: 12px;
-        width: 20px;
+        height: 10px;
+        width: 16px;
     }
 }
 
 /* HERO */
 .hero {
     display: flex;
+    width: 100vw;
+    /* overflow: hidden; */
     justify-content: space-between;
     background: #F56E0F;
     background: linear-gradient(250deg, rgba(245, 110, 15, 1) 0%, rgba(27, 27, 30, 1) 60%);
@@ -259,6 +270,7 @@ h2 {
 .responsive-grid {
     display: grid;
     grid-template-columns: auto auto;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
 
     @media (width < 1080px){
         /* display: flex; */
